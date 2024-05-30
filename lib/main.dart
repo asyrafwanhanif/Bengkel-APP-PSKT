@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             Container(
               height: 200,
@@ -84,15 +84,30 @@ class _MyHomePageState extends State<MyHomePage> {
               //         DecorationImage(image: AssetImage('assets/images.jpeg'))),
               child: Center(child: Text("asd")),
             ),
-            ElevatedButton(
-              child: const Text("Open Info"),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const InfoPage()),
-                );
-              },
-            )
+            Container(
+                child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [Text("data"), Text("data")],
+            )),
+            Container(
+                child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [Text("data"), Text("data")],
+            )),
+            Container(
+                child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [Text("data"), Text("data")],
+            )),
+            // ElevatedButton(
+            //   child: const Text("Open Info"),
+            //   onPressed: () {
+            //     Navigator.push(
+            //       context,
+            //       MaterialPageRoute(builder: (context) => const InfoPage()),
+            //     );
+            //   },
+            // )
           ],
         ),
       ),
